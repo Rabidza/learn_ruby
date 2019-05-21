@@ -11,7 +11,7 @@ def sum arr
   for num in arr
     total += num
   end
-  return total
+  total
 end
 
 def multiply *num
@@ -19,7 +19,7 @@ def multiply *num
   num.each do |i|
     ans *= i
   end
-  return ans
+  ans
 end
 
 def power num1, num2
