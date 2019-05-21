@@ -14,8 +14,12 @@ def sum arr
   return total
 end
 
-def multiply num1, num2
-  num1 * num2
+def multiply *num
+  ans = 1
+  num.each do |i|
+    ans *= i
+  end
+  return ans
 end
 
 def power num1, num2
@@ -23,4 +27,9 @@ def power num1, num2
 end
 
 def factorial num
+  if num <= 2
+    return num
+   else
+    return num * factorial(num-1)   
+   end
 end
